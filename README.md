@@ -25,7 +25,7 @@ $client->client_secret = $client_secret;
 // Get token from server
 $client->authenticate($client_id, $client_secret);
 // Or log in to your account if you already have token
-$client->authorize($token, $expires_in, $token_type);
+$client->setToken($token, $expires_in, $token_type);
 
 $a = new Autoload($client);
 $response = $a->getReports();

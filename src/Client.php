@@ -41,10 +41,10 @@ class Client
 
 		$options = json_decode($response->getBody()->getContents());
 		
-		return $this->authorize($options->access_token, $options->expires_in, $options->token_type);
+		return $this->setToken($options->access_token, $options->expires_in, $options->token_type);
 	}
 
-	public function authorize(string $access_token, int $expires_in, string $token_type): self
+	public function setToken(string $access_token, int $expires_in, string $token_type): self
 	{
 		$this->access_token = $access_token;
 		$this->expires_in = $expires_in;
