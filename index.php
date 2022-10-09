@@ -6,15 +6,14 @@ use Twim32\AvitoApi\Service\Messenger;
 use Twim32\AvitoApi\Service\Tariff;
 use Twim32\AvitoApi\Service\User;
 
-$client_id = 'vHS6tBlcJSfkC-1hEzdC';
-$client_secret = 'JaokGhhCUDK0rstaeTofVsHxYxpGpk63My-pa91q';
+$client_id = '';
+$client_secret = '';
 
-$token = 'L5BsuhxsTxepReK1eWqopAvwHlkItIewFte5Ap-L';
+$token = '';
 $expires_in = 86400;
 $token_type = 'Bearer';
-$user_id = 18788608;
-
-$chat_id = 'u2i-y9ykWR1EkNOJJMaE9i9m8w';
+$user_id = 0;
+$chat_id = '';
 
 $auth = new Client($user_id);
 $auth->client_id = $client_id;
