@@ -1,0 +1,20 @@
+{
+    "name": "twim32/avito_api",
+    "type": "library",
+    "license": "mit",
+    "autoload": {
+        "psr-4": {
+            "Twim32\\AvitoApi\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "twim32",
+            "email": "twim32@mail.ru"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "guzzlehttp/guzzle": "7.5.x-dev"
+    }
+}
