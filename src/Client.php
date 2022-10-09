@@ -7,7 +7,6 @@ use Psr\Http\Message\ResponseInterface;
 
 class Client
 {	
-	public string $user_id;
 	public string $client_id;
 	public string $client_secret;
 
@@ -19,9 +18,8 @@ class Client
 
 	private GuzzleHttp $http;
 
-	public function __construct(int $user_id)
+	public function __construct()
 	{
-		$this->user_id = $user_id;
 		$this->http = new GuzzleHttp([
 			'base_uri' => 'https://api.avito.ru/',
 		]);

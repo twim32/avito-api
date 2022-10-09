@@ -19,7 +19,7 @@ $user_id = 0;
 $chat_id = '';
 
 
-$client = new Client($user_id);
+$client = new Client;
 $client->client_id = $client_id;
 $client->client_secret = $client_secret;
 // Get token from server
@@ -28,8 +28,6 @@ $client->authenticate($client_id, $client_secret);
 $client->authorize($token, $expires_in, $token_type);
 
 $a = new Autoload($client);
-$response = $a->items([2142557050]);
-$response = $a->getReport(67803800);
 $response = $a->getReports();
 
 $msr = new Messenger($client);
